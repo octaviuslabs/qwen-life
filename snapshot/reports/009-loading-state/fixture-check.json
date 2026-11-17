@@ -1,0 +1,59 @@
+{
+  "fixture_only": true,
+  "live_model_executed": false,
+  "checks": [
+    {
+      "name": "pending indicator survives ordinary polls and elapsed time advances",
+      "passed": true
+    },
+    {
+      "name": "unrelated event and generation cannot complete the local receipt",
+      "passed": true
+    },
+    {
+      "name": "duplicate button and canvas actions blocked",
+      "passed": true
+    },
+    {
+      "name": "matching completion releases controls",
+      "passed": true
+    },
+    {
+      "name": "refresh recognizes work submitted by another client",
+      "passed": true
+    },
+    {
+      "name": "API rejection releases controls and stays out of chat",
+      "passed": true
+    },
+    {
+      "name": "runtime rejection ends loading with an error",
+      "passed": true
+    },
+    {
+      "name": "state connection loss blocks controls and recovers",
+      "passed": true
+    },
+    {
+      "name": "lost POST response reconciles queue without automatic resubmission",
+      "passed": true
+    },
+    {
+      "name": "Pause finishes current request without scheduling another",
+      "passed": true
+    },
+    {
+      "name": "loading layout fits actual 900px viewport",
+      "passed": true
+    },
+    {
+      "name": "loading layout fits actual 320px viewport",
+      "passed": true
+    },
+    {
+      "name": "reduced motion keeps status visible without spinner animation",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

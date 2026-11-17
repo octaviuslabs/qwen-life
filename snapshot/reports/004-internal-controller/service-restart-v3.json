@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "date": "2026-11-05",
+  "container": "qwen-life-internal-v3",
+  "checkpoint": "build/qwen-life-internal-08b-v3",
+  "runtime_dir": "build/tailnet-internal-v3",
+  "before": {
+    "generation": 3,
+    "population": 4,
+    "event_id": 17,
+    "conversation_records": 32,
+    "neural_state_sha256": "c29e47f29e1ae0996db214f38d1dda23d65ebdaf8543e323f8c23883993ecf11"
+  },
+  "after": {
+    "generation": 3,
+    "population": 4,
+    "event_id": 18,
+    "conversation_records": 32,
+    "neural_state_sha256": "c29e47f29e1ae0996db214f38d1dda23d65ebdaf8543e323f8c23883993ecf11",
+    "backend": "qwen-life-internal-controller",
+    "message": "Internal neural controller loaded"
+  },
+  "expected_event_increment": 1,
+  "tailnet_state_endpoint_healthy": true
+}

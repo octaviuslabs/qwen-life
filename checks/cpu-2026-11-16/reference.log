@@ -1,0 +1,13 @@
+test_network_is_exact_on_all_512_neighborhoods (test_life.AnalyticNetworkTests.test_network_is_exact_on_all_512_neighborhoods) ... ok
+test_no_parameter_is_trainable (test_life.AnalyticNetworkTests.test_no_parameter_is_trainable) ... ok
+test_randomized_multistep_worlds_match_oracle_exactly (test_life.AnalyticNetworkTests.test_randomized_multistep_worlds_match_oracle_exactly) ... ok
+test_all_512_local_neighborhoods (test_life.LifeOracleTests.test_all_512_local_neighborhoods) ... ok
+test_boundary_modes_are_explicit (test_life.LifeOracleTests.test_boundary_modes_are_explicit) ... ok
+test_renderer_api_contains_no_state_transition (test_life.LifeOracleTests.test_renderer_api_contains_no_state_transition) ... ok
+test_standard_patterns (test_life.LifeOracleTests.test_standard_patterns) ... ok
+test_state_encoding_round_trip_and_fixed_contract (test_life.LifeOracleTests.test_state_encoding_round_trip_and_fixed_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.174s
+
+OK

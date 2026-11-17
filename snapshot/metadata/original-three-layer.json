@@ -1,0 +1,18 @@
+{
+  "base": "2fc06364715b967f1860aea9cf38778875588b17",
+  "base_hidden": 1024,
+  "hidden": 1408,
+  "ballast_dims": 22,
+  "life_layers": 3,
+  "circuit_dims": 585,
+  "residual_slots": 310,
+  "vocab_offset": 248320,
+  "life_vocab": 65539,
+  "parameters": 1215625120,
+  "board": [
+    16,
+    16
+  ],
+  "generated_tokens_per_generation": 17,
+  "gradients": false
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "url": "<PRIVATE_DEMO_URL>",
+  "backend": "qwen-life-internal-controller",
+  "generation_before": 3,
+  "generation_after": 4,
+  "population": 4,
+  "exact_reference_match": true,
+  "canvas_matches_all_256_cells": true,
+  "main_model_healthy_before_and_after": true,
+  "alternate_port_matches": true,
+  "request_seconds": 3.714
+}

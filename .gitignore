@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+snapshot/references/
+snapshot/base-qwen/
+snapshot/build/
+snapshot/runs/
+snapshot/results/
+snapshot/findings/010-corner-audit/isolated-runtime/
+snapshot/findings/010-corner-audit/report.json
+*.safetensors
+*.pt
+*.pth

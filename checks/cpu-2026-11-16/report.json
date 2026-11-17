@@ -1,0 +1,105 @@
+{
+  "format": "qwen-life-cpu-checks-v1",
+  "started_at_utc": "2026-11-17T01:23:18.609679+00:00",
+  "status": "passed",
+  "scope": "Selected standalone-rule, symbolic-circuit, merge-plan, runtime-unit, and UI/bridge-unit tests",
+  "checkpoint_loaded": false,
+  "gpu_enabled": false,
+  "full_model_reproduction": false,
+  "historical_reports_modified": false,
+  "environment_controls": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "groups": [
+    {
+      "name": "reference",
+      "cwd": "snapshot/reference",
+      "command": [
+        "<python>",
+        "-B",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "log": "reference.log",
+      "exit_code": 0,
+      "status": "passed",
+      "expected_tests": 8,
+      "passed_tests": 8,
+      "reported_passed_subtests": 0,
+      "seconds": 0.898
+    },
+    {
+      "name": "circuit-runtime",
+      "cwd": "snapshot",
+      "command": [
+        "<python>",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "prototype/test_internal_circuit.py",
+        "tests/test_internal_merge_plan.py",
+        "tests/test_internal_runtime.py"
+      ],
+      "log": "circuit-runtime.log",
+      "exit_code": 0,
+      "status": "passed",
+      "expected_tests": 31,
+      "passed_tests": 31,
+      "reported_passed_subtests": 9,
+      "seconds": 7.398
+    },
+    {
+      "name": "ui-bridge",
+      "cwd": "snapshot/ui",
+      "command": [
+        "<python>",
+        "-B",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "log": "ui-bridge.log",
+      "exit_code": 0,
+      "status": "passed",
+      "expected_tests": 13,
+      "passed_tests": 13,
+      "reported_passed_subtests": 0,
+      "seconds": 0.06
+    }
+  ],
+  "dependencies": {
+    "qwenputer": {
+      "path": "<external-checkout:qwenputer>",
+      "revision": "bec1a0c9654ac8151b6f36ed0154a19c53141384",
+      "tracked_files_clean": true
+    },
+    "qwenGPU": {
+      "path": "<external-checkout:qwenGPU>",
+      "revision": "e2695f6a0a818ebc68e2e14b6b990eddf04c51b3",
+      "tracked_files_clean": true
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux",
+    "architecture": "aarch64",
+    "packages": {
+      "torch": "2.15.0",
+      "transformers": "5.22.1",
+      "pytest": "9.2.0",
+      "numpy": "2.5.4",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3"
+    }
+  },
+  "passed_tests": 52,
+  "reported_passed_subtests": 9,
+  "finished_at_utc": "2026-11-17T01:23:27.046360+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "backend": "qwen-life-internal-controller",
+  "step_advanced_neural_world": true,
+  "persisted_conversation_unchanged": true,
+  "browser_chat_unchanged": true,
+  "control_error_in_status_only": true,
+  "refresh_preserves_quiet_chat": true,
+  "existing_chat_records_preserved": 38,
+  "main_model_healthy": true
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "instant_loading": true,
+  "spinner_and_elapsed_visible": true,
+  "duplicate_controls_disabled": true,
+  "receipt_waited_for_completion": true,
+  "real_generation_advanced": true,
+  "controls_reenabled": true,
+  "pause_finishes_current_without_next": true,
+  "main_model_healthy": true,
+  "busy_observation": {
+    "mode": "busy",
+    "title": "Advancing the world…",
+    "elapsed": "0.4s",
+    "stepDisabled": true,
+    "sendDisabled": true,
+    "canvasDisabled": "true",
+    "spinner": "activity-spin"
+  }
+}

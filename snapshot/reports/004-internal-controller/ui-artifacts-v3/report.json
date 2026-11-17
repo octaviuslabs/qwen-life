@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "url": "<PRIVATE_DEMO_URL>",
+  "backend_required": "qwen-life-internal-controller",
+  "actual_firefox_required": true,
+  "runtime_dir": "<PROJECT_ROOT>/build/tailnet-internal-v3",
+  "queue_start_byte": 0,
+  "summary": {
+    "passed": 11,
+    "failed": 0,
+    "total": 11
+  },
+  "final_state": {
+    "generation": 3,
+    "population": 4,
+    "event_id": 17,
+    "board_sha256": "46e4c18bf56299e25107cee10e7ff97b165a126ec76ed5388835012b78067510",
+    "conversation_records": 32
+  },
+  "cases": [
+    {
+      "name": "firefox-internal-backend-and-canvas",
+      "status": "passed",
+      "seconds": 0.21701022889465094,
+      "detail": {
+        "generation": 0,
+        "population": 12,
+        "sha256": "c1ddba05065a2394f3477e5cc0111428ccd1ae2d23647b49b90edb06ea80d8a5",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:159.0) Gecko/20100101 Firefox/159.0"
+      }
+    },
+    {
+      "name": "natural-language-chat-no-mutation",
+      "status": "passed",
+      "seconds": 3.202771938405931,
+      "detail": {
+        "event_id": 2,
+        "board_sha256": "c1ddba05065a2394f3477e5cc0111428ccd1ae2d23647b49b90edb06ea80d8a5",
+        "message": "Hello! I'm ready to help you explore the Game of Life world. I can discuss the current state of the simulation without making any changes. How would you like to proceed?"
+      }
+    },
+    {
+      "name": "clear-button-exact",
+      "status": "passed",
+      "seconds": 2.8399633672088385,
+      "detail": {
+        "generation": 0,
+        "population": 0,
+        "parsed_command": "INTERNAL"
+      }
+    },
+    {
+      "name": "step-button-exact",
+      "status": "passed",
+      "seconds": 3.540826816111803,
+      "detail": {
+        "generation_before": 0,
+        "generation_after": 1,
+        "population": 0
+      }
+    },
+    {
+      "name": "all-pattern-selectors-exact",
+      "status": "passed",
+      "seconds": 20.667089208960533,
+      "detail": {
+        "glider": {
+          "population": 5,
+          "sha256": "f02a33bea4851a9ce118cbfcdba7f7831c4c04d39cda7ada6cb63048048a9517"
+        },
+        "blinker": {
+          "population": 3,
+          "sha256": "6e63b6601b7cad701b5756e163e149fa3013caedff0f14c7e127298ba6afd9a3"
+        },
+        "block": {
+          "population": 4,
+          "sha256": "46e4c18bf56299e25107cee10e7ff97b165a126ec76ed5388835012b78067510"
+        }
+      }
+    },
+    {
+      "name": "canvas-toggle-exact",
+      "status": "passed",
+      "seconds": 10.929461452178657,
+      "detail": {
+        "on_sha256": "a9114fa646c63801008d8079c7b55a2392f1d6dd6876cb81643afd257ff5d378",
+        "off_sha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+      }
+    },
+    {
+      "name": "run-pause-no-queue-flooding",
+      "status": "passed",
+      "seconds": 15.580675976350904,
+      "detail": {
+        "generation_before": 1,
+        "generation_after": 3,
+        "queue_records": 2,
+        "maximum_allowed_records": 3,
+        "board_sha256": "46e4c18bf56299e25107cee10e7ff97b165a126ec76ed5388835012b78067510"
+      }
+    },
+    {
+      "name": "refresh-and-disk-persistence",
+      "status": "passed",
+      "seconds": 0.6149328462779522,
+      "detail": {
+        "generation": 3,
+        "population": 4,
+        "conversation_records": 32,
+        "board_sha256": "46e4c18bf56299e25107cee10e7ff97b165a126ec76ed5388835012b78067510"
+      }
+    },
+    {
+      "name": "invalid-api-rejected-before-queue",
+      "status": "passed",
+      "seconds": 0.007585623301565647,
+      "detail": {
+        "unsupported": 400,
+        "zero_tick": 400,
+        "bad_cell": 400,
+        "empty_say": 400,
+        "bad_pattern": 400,
+        "out_of_bounds_pattern": 400,
+        "float_tick": 400,
+        "boolean_tick": 400,
+        "object_say": 400,
+        "extra_clear_field": 400
+      }
+    },
+    {
+      "name": "responsive-layout",
+      "status": "passed",
+      "seconds": 0.6857800595462322,
+      "detail": {
+        "900": {
+          "innerWidth": 900,
+          "scrollWidth": 888,
+          "columns": "856px",
+          "worldTop": 121.60000610351562,
+          "conversationTop": 1231.199951171875,
+          "canvasWidth": 800.7999877929688
+        },
+        "600": {
+          "innerWidth": 600,
+          "scrollWidth": 588,
+          "columns": "556px",
+          "worldTop": 105.60000610351562,
+          "conversationTop": 932.2000122070312,
+          "canvasWidth": 500.79998779296875
+        }
+      }
+    },
+    {
+      "name": "commands-jsonl-all-say",
+      "status": "passed",
+      "seconds": 0.0002199709415435791,
+      "detail": {
+        "records": 16,
+        "all_type_say": true,
+        "first": {
+          "type": "say",
+          "text": "Hello. Please greet me without changing or inspecting the world."
+        },
+        "last": {
+          "type": "say",
+          "text": "Advance one generation."
+        }
+      }
+    }
+  ]
+}

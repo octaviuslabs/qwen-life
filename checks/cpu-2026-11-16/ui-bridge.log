@@ -1,0 +1,18 @@
+test_chat_copy_and_runtime_rejection_feedback_are_safe (test_ui.RendererBridgeTests.test_chat_copy_and_runtime_rejection_feedback_are_safe) ... ok
+test_clear_chat_metadata_survives_controller_and_snapshot_bridge (test_ui.RendererBridgeTests.test_clear_chat_metadata_survives_controller_and_snapshot_bridge) ... ok
+test_commands_are_structural_only (test_ui.RendererBridgeTests.test_commands_are_structural_only) ... ok
+test_commands_reject_json_type_coercion_and_extra_fields (test_ui.RendererBridgeTests.test_commands_reject_json_type_coercion_and_extra_fields) ... ok
+test_explicit_chat_visibility_metadata_survives_translation (test_ui.RendererBridgeTests.test_explicit_chat_visibility_metadata_survives_translation) ... ok
+test_file_bridge_forwards_command_without_changing_state (test_ui.RendererBridgeTests.test_file_bridge_forwards_command_without_changing_state) ... ok
+test_internal_controller_queue_contains_only_say_records (test_ui.RendererBridgeTests.test_internal_controller_queue_contains_only_say_records) ... ok
+test_internal_controller_translates_every_ui_mutation_to_say (test_ui.RendererBridgeTests.test_internal_controller_translates_every_ui_mutation_to_say) ... ok
+test_mock_uses_recorded_frames_and_labels_itself (test_ui.RendererBridgeTests.test_mock_uses_recorded_frames_and_labels_itself) ... ok
+test_production_sources_contain_no_life_transition_rule (test_ui.RendererBridgeTests.test_production_sources_contain_no_life_transition_rule) ... ok
+test_queue_receipts_distinguish_completion_of_two_clients (test_ui.RendererBridgeTests.test_queue_receipts_distinguish_completion_of_two_clients) ... ok
+test_snapshot_contract_rejects_nonbinary_cells (test_ui.RendererBridgeTests.test_snapshot_contract_rejects_nonbinary_cells) ... ok
+test_snapshot_roundtrip_preserves_runtime_event_id (test_ui.RendererBridgeTests.test_snapshot_roundtrip_preserves_runtime_event_id) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK

@@ -1,0 +1,24 @@
+{
+  "snapshot_integrity": "passed",
+  "snapshot_payload_files_checked": 59,
+  "recorded_evolution": {
+    "worlds": 3,
+    "generations": 160,
+    "tokens": 2746
+  },
+  "recorded_semantics": {
+    "status": "failed",
+    "total": 31,
+    "passed": 26,
+    "failed": 5,
+    "failed_cases": [
+      "block_lower_right",
+      "glider_upper_left",
+      "repeat_setup_clear",
+      "repeat_setup_blinker",
+      "block_same_prompt_first"
+    ]
+  },
+  "model_executed": false,
+  "scope": "File integrity and consistency of saved results, not a fresh model evaluation."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "life": {
+    "generations": 21,
+    "owned_outputs_correct": 357,
+    "owned_outputs_total": 357,
+    "snapshot_continuation": true,
+    "initialization_ticks": 18,
+    "ticks": 378,
+    "total_ticks": 396,
+    "seconds": 8.72336554992944,
+    "ticks_per_second": 43.331899578948345
+  },
+  "base_vocab_masked": {
+    "positions": 49,
+    "top1_agreement": 48,
+    "mean_kl_base_to_merged": 0.0031314264484090205,
+    "max_kl_base_to_merged": 0.04212840273976326
+  }
+}

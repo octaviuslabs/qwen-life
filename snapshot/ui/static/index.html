@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neural Life</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div>
+          <p class="eyebrow">QWEN WEIGHT-SPACE EXPERIMENT</p>
+          <h1>Neural Life</h1>
+        </div>
+        <span id="backendBadge" class="badge">Connecting…</span>
+      </header>
+
+      <section class="layout">
+        <article class="panel conversation-panel">
+          <div class="panel-title">
+            <div>
+              <p class="eyebrow">LANGUAGE INTERFACE</p>
+              <h2>Conversation</h2>
+            </div>
+          </div>
+          <div id="conversation" class="conversation" aria-live="polite">
+            <div class="bubble system">
+              Talk to the world naturally, or ask Qwen to advance time, place one pattern,
+              change one cell, clear the world, or inspect the board. Send one action at a time.
+            </div>
+          </div>
+          <form id="chatForm" class="chat-form">
+            <label class="sr-only" for="chatInput">Command the world</label>
+            <textarea id="chatInput" rows="3" placeholder="Say hello, ask about the world, or try: Advance 3 generations."></textarea>
+            <button id="sendButton" type="submit" class="primary">Send to Qwen</button>
+          </form>
+          <div class="receipt">
+            <span>Exact command</span>
+            <code id="parsedCommand">—</code>
+          </div>
+        </article>
+
+        <article class="panel world-panel">
+          <div class="world-heading">
+            <div>
+              <p class="eyebrow">RECURRENT NEURAL STATE</p>
+              <h2>16 × 16 world</h2>
+            </div>
+            <dl class="stats">
+              <div><dt>Generation</dt><dd id="generation">0</dd></div>
+              <div><dt>Population</dt><dd id="population">0</dd></div>
+            </dl>
+          </div>
+          <div id="activity" class="activity" data-state="idle">
+            <span class="activity-spinner" aria-hidden="true"></span>
+            <div role="status" aria-live="polite" aria-atomic="true">
+              <strong id="activityTitle">Connecting to the world…</strong>
+              <span id="activityDetail">The board will appear when connected.</span>
+            </div>
+            <span id="activityElapsed" class="activity-elapsed" aria-hidden="true"></span>
+          </div>
+          <div class="canvas-frame">
+            <canvas id="world" width="640" height="640" aria-label="Game of Life grid"></canvas>
+          </div>
+          <p id="statusMessage" class="status">Waiting for state…</p>
+
+          <div class="controls">
+            <button id="runButton" class="primary" type="button">▶ Run</button>
+            <button id="pauseButton" type="button">Ⅱ Pause</button>
+            <button id="stepButton" type="button">Step</button>
+            <button id="clearButton" type="button" title="Clear the board and conversation">Clear</button>
+          </div>
+
+          <div class="subcontrols">
+            <label>Pause between steps
+              <select id="speed">
+                <option value="1000">1 second</option>
+                <option value="500" selected>0.5 seconds</option>
+                <option value="250">0.25 seconds</option>
+              </select>
+            </label>
+            <label>Pattern
+              <select id="pattern">
+                <option value="glider">Glider</option>
+                <option value="blinker">Blinker</option>
+                <option value="block">Block</option>
+              </select>
+            </label>
+            <button id="placeButton" type="button">Place at 1,1</button>
+          </div>
+          <p class="hint">Each step waits for Qwen to finish, then adds the selected pause. Click a cell to change it.</p>
+        </article>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
